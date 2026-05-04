@@ -39,7 +39,10 @@ export default defineConfig({
       type: "http",
       chainType: "op",
       url: configVariable("OP_SEPOLIA_RPC_URL"),
-      accounts: [configVariable("OP_SEPOLIA_PRIVATE_KEY")],
+    accounts: [
+      configVariable("OP_SEPOLIA_PRIVATE_KEY"),
+      configVariable("OP_SEPOLIA_PRIVATE_KEY_2"),
+    ],
     },
   },
 });
